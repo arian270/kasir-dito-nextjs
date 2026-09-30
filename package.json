@@ -1,0 +1,20 @@
+{
+  "name": "kasir-dito-pos",
+  "version": "1.0.0",
+  "description": "Aplikasi Kasir (Point of Sale / POS) Web untuk Tugas Sekolah SMK",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "install:app": "npm --prefix frontend install",
+    "postinstall": "npm --prefix frontend install"
+  },
+  "keywords": [
+    "pos",
+    "kasir",
+    "nextjs",
+    "mysql"
+  ],
+  "author": "Dito",
+  "license": "MIT"
+}
