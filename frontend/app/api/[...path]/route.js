@@ -1,16 +1,14 @@
 import { NextResponse } from 'next/server';
-import { createRequire } from 'module';
 import jwt from 'jsonwebtoken';
+import authController from '../../../src/server/controllers/authController.cjs';
+import productController from '../../../src/server/controllers/productController.cjs';
+import memberController from '../../../src/server/controllers/memberController.cjs';
+import transactionController from '../../../src/server/controllers/transactionController.cjs';
+import reportController from '../../../src/server/controllers/reportController.cjs';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const require = createRequire(import.meta.url);
-const authController = require('../../../src/server/controllers/authController.cjs');
-const productController = require('../../../src/server/controllers/productController.cjs');
-const memberController = require('../../../src/server/controllers/memberController.cjs');
-const transactionController = require('../../../src/server/controllers/transactionController.cjs');
-const reportController = require('../../../src/server/controllers/reportController.cjs');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'kasir_dito_smk_pos_secret_token_2026_xyz';
 
